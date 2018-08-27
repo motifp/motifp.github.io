@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Teri Ke -- Designer & Programmer -- https://twitter.com/fried_forest
 
 # THANKS
 

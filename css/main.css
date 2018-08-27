@@ -9,6 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Muli);
 
 html {
     color: #474747;
@@ -98,6 +99,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+h1 {
+  font-size: 1em;
+  font-family: "Muli", sans-serif;
+}
+
+h2 {
+  font-size: .5em;
+  font-family: "Muli", sans-serif;
+}
 
 
 
@@ -109,8 +119,23 @@ textarea {
 
 
 
+.topnav {
+  overflow: hidden;
+  background-color: #232323;
+}
 
+.topnav a {
+  float: right;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
+.topnav a:hover {
+  background-color: #9b9b9b;
+}
 
 
 

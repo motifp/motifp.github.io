@@ -147,7 +147,21 @@ h1 {
 
 
 .landing {
- background-color: #232323;
+  position: relative;
+  background-color: #232323;
+}
+
+.landing_header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  text-align: center;
+  font-size: 100px;
+  color: #f2f2f2;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 100;
+  letter-spacing: 3px;
 }
 
 /* ==========================================================================

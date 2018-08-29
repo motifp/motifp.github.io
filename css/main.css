@@ -106,7 +106,7 @@ h1 {
 }
 
 .landing h {
-  font-size: 17.5vw;
+  font-size: 200px;
   color: #f2f2f2;
   font-family: "Catamaran", sans-serif;
   font-weight: 100;
@@ -160,10 +160,20 @@ h1 {
   font-size: 200px;
   color: #f2f2f2;
   font-family: "Catamaran", sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   letter-spacing: 3px;
 }
 
+.quote1 {
+  background-color: #232323; 
+}
+
+.quote1 p {
+  color: #f2f2f2;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

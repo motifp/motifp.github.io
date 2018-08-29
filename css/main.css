@@ -166,6 +166,7 @@ h1 {
 
 .quote1 {
   background-color: #232323; 
+  Display: inline-block;
 }
 
 .quote1 p {

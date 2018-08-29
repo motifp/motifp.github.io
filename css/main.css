@@ -9,7 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Karla);
 
 html {
     color: #474747;
@@ -101,15 +101,15 @@ textarea {
 
 h1 {
   font-size: 23px;
-  font-family: "Muli", sans-serif;
-}
-
-
-h3 {
-  font-size: 72px;
+  font-family: "Karla", sans-serif;
   color: #f2f2f2;
 }
 
+h4 {
+  font-size: 100px;
+  color: #f2f2f2;
+  font-family: "Karla";
+}
 
 
 
@@ -142,6 +142,12 @@ h3 {
   height: auto;
   float: left;
 }
+
+
+.landing {
+ background-color: #232323;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

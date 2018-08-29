@@ -9,7 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Karla);
+@import url(https://fonts.googleapis.com/css?family=Catamaran);
 
 html {
     color: #474747;
@@ -101,14 +101,16 @@ textarea {
 
 h1 {
   font-size: 23px;
-  font-family: "Karla", sans-serif;
+  font-family: "Catamaran", sans-serif;
   color: #f2f2f2;
 }
 
 h4 {
   font-size: 100px;
   color: #f2f2f2;
-  font-family: "Karla";
+  font-family: "Catamaran", sans-serif;
+  font-weight: 100;
+  letter-spacing: 3px;
 }
 
 

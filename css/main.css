@@ -9,8 +9,8 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Catamaran);
-@import url(https://fonts.googleapis.com/css?family=Assistant:200);
+@import url(fonts.googleapis.com/css?family=Catamaran);
+@import url(fonts.googleapis.com/css?family=Assistant:200);
 
 html {
     color: #474747;
@@ -168,6 +168,7 @@ h1 {
 .quote1 {
   background-color: #232323; 
   display: inline-block;
+  width: 100%;
 }
 
 .quote1 p {
@@ -182,6 +183,7 @@ h1 {
 .intro {
   background-color: #f2f2f2;
   display: inline-block;
+  width: 100%;
 }
 
 .intro p {
@@ -192,6 +194,7 @@ h1 {
 .quote2 {
   display: inline-block;
   background-color: #232323;
+  width: 100%;
 }
 
 .quote2 h {

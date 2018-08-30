@@ -9,7 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Catamaran);
+@import url(https://fonts.googleapis.com/css?family=Catamaran|Assistant:200);
 
 html {
     color: #474747;
@@ -178,7 +178,12 @@ h1 {
 }
 
 .intro {
-  font-size: 1em;
+  background-color: #f2f2f2;
+}
+
+.intro p {
+  font-family: “Assistant”, sans-serif;
+  Font-size: 18px;
 }
 /* ==========================================================================
    Helper classes

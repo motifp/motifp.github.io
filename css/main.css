@@ -9,7 +9,8 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Catamaran|Assistant:200);
+@import url(“https://fonts.googleapis.com/css?family=Catamaran”);
+@import url(“https://fonts.googleapis.com/css?family=Assistant:200”);
 
 html {
     color: #474747;

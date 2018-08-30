@@ -179,26 +179,23 @@ h1 {
   width: 100%;
 }
 
-.intro_wrapper {
-  width: 100%;
+#flexbox {
+  display: flex;
+}
+
+.into_left {
+  flex: 0 0 30%;
+  background-color: #f2f2f2;
 }
 
 .intro_text {
-  background-color: #f2f2f2;
-  display: inline-block;
-  float: right;
-  width: 70%;
+  flex: 1;
+  margin-left: 108px;
 }
 
 .intro_text p {
   font-family: "Assistant", sans-serif;
   font-size: 18px;
-}
-
-.into_left {
-  background-color: #f2f2f2;
-  float: left;
-  width: 30%;
 }
 
 .quote2 {

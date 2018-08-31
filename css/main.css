@@ -165,13 +165,13 @@ h1 {
   letter-spacing: 3px;
 }
 
-.quote1 {
+.quote {
   background-color: #232323; 
   display: inline-block;
   width: 100%;
 }
 
-.quote1 p {
+.quote p {
   font-family: "Futura", sans-serif;
   font-size: 40px;
   letter-spacing: 1.7px;

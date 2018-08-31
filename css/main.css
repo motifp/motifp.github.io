@@ -195,6 +195,15 @@ h1 {
   background-color: #f2f2f2;
 }
 
+.left h1 {
+  font-family: "Futura", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  color: #474747;
+  position: relative;
+  margin-left: 15%;
+}
+
 .right {
   flex: 1;
   margin-left: 0px;
@@ -207,7 +216,6 @@ h1 {
   letter-spacing: 1.7px;
   line-height: 1.6em;
   font-weight: 100;
-  Margin-right: 10%;
 }
 
 .quote2 {

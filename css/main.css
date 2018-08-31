@@ -168,6 +168,7 @@ h1 {
 .quote1 {
   background-color: #232323; 
   display: inline-block;
+  width: 100%;
 }
 
 .quote1 p {
@@ -191,6 +192,7 @@ h1 {
 #intro_text {
   flex: 1;
   margin-left: 108px;
+  Background-color: #f2f2f2;
 }
 
 #intro_text p {
@@ -201,6 +203,7 @@ h1 {
 .quote2 {
   display: inline-block;
   background-color: #232323;
+  width: 100%;
 }
 
 .quote2 h {

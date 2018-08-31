@@ -186,28 +186,27 @@ h1 {
   margin-left: 5%;
 }
 
-
-#flexbox {
+.flexbox {
   display: flex;
 }
 
-#intro_left {
-  flex: 0 0 30%;
+.left {
+  flex: 0 0 40%;
   background-color: #f2f2f2;
 }
 
-#intro_text {
+.right {
   flex: 1;
   margin-left: 0px;
-  Background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
-#intro_text p {
-  font-family: “Didact Gothic”, sans-serif;
+.right p {
+  font-family: "Didact Gothic", sans-serif;
   font-size: 22px;
   letter-spacing: 1.7px;
-  Line-height: 1.6em;
-  Font-weight: 100;
+  line-height: 1.6em;
+  font-weight: 100;
 }
 
 .quote2 {
@@ -221,7 +220,8 @@ h1 {
   color: #f2f2f2;
 }
 
-/* ==========================================================================
+/*
+==========================================================================
    Helper classes
    ========================================================================== */
 

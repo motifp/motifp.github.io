@@ -204,6 +204,20 @@ h1 {
   margin-left: 15%;
 }
 
+.left h {
+  font-family: "Cantarell", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2.3px;
+  color: #232323;
+}
+
+.left p {
+  font-family: "Cantarell", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2.3px;
+  color: #9e9e9e;
+}
+
 .right {
   flex: 1;
   margin-left: 0px;

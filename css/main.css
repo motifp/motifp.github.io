@@ -82,7 +82,11 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+    resize: none;
+    width: 80%;
+    border: 2px;
+    border-color: #d3d3d3;
+    padding: 12px;
 }
 
 /* ==========================================================================

@@ -8,7 +8,7 @@
 
 .wrapper {
   display: grid;
-  grid-template-rows: 70px 1fr 70px;
+  grid-template-rows: 0px 1fr auto;
   grid-template-columns: 1fr;
   grid-template-areas: "sidebar"
                        "content";
@@ -16,13 +16,6 @@
   height: 100vh;
 }
 
-@media screen and (min-width: 850px) {
-  .wrapper {
-    grid-template-columns: 200px 5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "sidebar content";
-  }
-}
 
 
 
@@ -30,7 +23,10 @@
 
 main {
   grid-area: content;
-  padding: 48px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
 }
 
 sidebar {

@@ -345,6 +345,17 @@ h1 {
 .bottomnav a:hover {
   color: #f2f2f2;
 }
+
+.blog h {
+  display: inline-block;
+  font-family: "Futura", sans-serif;
+  font-size: 24px;
+  letter-spacing: 2.3px;
+  color: #9e9e9e;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 25%;
+}
 /*
 ==========================================================================
    Helper classes

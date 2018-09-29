@@ -179,6 +179,10 @@
   width: 100%;
 }
 
+.calendar_container {
+  padding: 12px;
+}
+
 .week_container {
   width: 100%;
   display: flex;
@@ -216,6 +220,10 @@
 .week_label_sat p {
   font-size: 1em;
   color: #474747;
+}
+
+.days_container {
+  margin-bottom: 20px;
 }
 
 .days_row1_container {

@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="fonts.googleapis.com/css?family=Didact+Gothic">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantarell">
   <link rel="stylesheet" href="/css/calendar.css">
+  <script src="/js/calendar.js"></script>
 </head>
 
 <body>
@@ -34,73 +35,62 @@
    <a id="logo" href="index.html"><img src="img/motif_logo_white.png" alt="motif_logo" width="120" height="90" style="position: absolute; top: -16px;"></a>
   </div>
 
- <div class="wrapper">
-  <main>
-    <div class="toolbar">
-      <div class="toggle">
-        <div class="toggle__option">week</div>
-        <div class="toggle__option toggle__option--selected">month</div>
-      </div>
-      <div class="current-month">June 2016</div>
-    </div>
-    <div class="calendar">
-      <div class="calendar__header">
-        <div>mon</div>
-        <div>tue</div>
-        <div>wed</div>
-        <div>thu</div>
-        <div>fri</div>
-        <div>sat</div>
-        <div>sun</div>
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">1</div>
-        <div class="calendar__day day">2</div>
-        <div class="calendar__day day">3</div>
-        <div class="calendar__day day">4</div>
-        <div class="calendar__day day">5</div>
-        <div class="calendar__day day">6</div>
-        <div class="calendar__day day">7</div>
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">8</div>
-        <div class="calendar__day day">9</div>
-        <div class="calendar__day day">10</div>
-        <div class="calendar__day day">11</div>
-        <div class="calendar__day day">12</div>
-        <div class="calendar__day day">13</div>
-        <div class="calendar__day day">14</div>        
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">15</div>
-        <div class="calendar__day day">16</div>
-        <div class="calendar__day day">17</div>
-        <div class="calendar__day day">18</div>
-        <div class="calendar__day day">19</div>
-        <div class="calendar__day day">20</div>
-        <div class="calendar__day day">21</div>    
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">22</div>
-        <div class="calendar__day day">23</div>
-        <div class="calendar__day day">24</div>
-        <div class="calendar__day day">25</div>
-        <div class="calendar__day day">26</div> 
-        <div class="calendar__day day">27</div> 
-        <div class="calendar__day day">28</div> 
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">29</div>
-        <div class="calendar__day day">30</div>
-        <div class="calendar__day day">31</div>
-        <div class="calendar__day day">1</div>
-        <div class="calendar__day day">2</div>
-        <div class="calendar__day day">3</div>
-        <div class="calendar__day day">4</div>
-      </div>
-    </div>
-  </main>
- </div>
+
+  <div id="popup" class="overlay">
+  <div>
+    <div class="close">Close</div>
+    <h1></h1>
+    <p>No event scheduled, check back later... </p>
+  </div>
+</div>
+
+
+
+<div class="toolbar">
+<div id="month_current"></div>
+<div id="year_current"></div>
+</div>
+
+<div class="week_container">
+  <div class="week_label">Sun</div>
+  <div class="week_label">Mon</div>
+  <div class="week_label">Tue</div>
+  <div class="week_label">Wed</div>
+  <div class="week_label">Thu</div>
+  <div class="week_label">Fri</div>
+  <div class="week_label_sat">Sat</div>
+</div>
+
+<div class="days_row1_container">
+  <div id="days_row1"></div>
+  <script>createDays1();</script>
+</div>
+
+<div class="days_row2_container">
+  <div id="days_row2"></div>
+  <script>createDays2();</script>
+</div>
+
+<div class="days_row3_container">
+  <div id="days_row3"></div>
+  <script>createDays3();</script>
+</div>
+
+<div class="days_row4_container">
+  <div id="days_row4"></div>
+  <script>createDays4();</script>
+</div>
+
+<div class="days_row5_container">
+  <div id="days_row5"></div>
+  <script>createDays5();</script>
+</div>
+
+<div class="days_row6_container">
+  <div id="days_row6"></div>
+  <script>createDays6();</script>
+</div>
+  
 
   <div class="bottomnav">
   <a href="#" target="_blank">INSTAGRAM</a>

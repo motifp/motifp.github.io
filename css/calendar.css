@@ -177,10 +177,13 @@
 
 .toolbar {
   width: 100%;
+  margin-top: 50px;
 }
 
 .calendar_container {
-  padding: 12px;
+  padding: 40px;
+  margin-bottom: 25px;
+  margin-top: 50px;
 }
 
 .week_container {
@@ -224,6 +227,7 @@
 
 .days_container {
   margin-bottom: 20px;
+  
 }
 
 .days_row1_container {

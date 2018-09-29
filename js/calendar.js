@@ -90,15 +90,25 @@ if (date < 8) {
   } else if (days.indexOf(day) < date - 28) {
   	initial = date - 28 - days.indexOf(day) - 7;
   } else {
-  	initial = date - 28 - days.indexOf(day) + 1;
+  	initial = date - 28 - days.indexOf(day);
   }
 }
 
-var cssDays = ' {width: 200px; font-family: "Futura", sans-serif; color: #7c7c7c; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px;}';
+/* testing function
+$(document).ready (function () {
+	$("#testing").append('<div>' + initial+ '</div>');
+})
+*/
 
-var cssToday = ' {width: 200px; font-family: "Futura", sans-serif; color: #070707; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px;}';
+var cssDays = ' {width: 200px; font-family: "Futura", sans-serif; color: #9e9e9e; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px;}';
+
+var cssToday = ' {width: 200px; font-family: "Futura", sans-serif; color: #070707; font-weight: 400; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px;}';
+
+var cssEventDay = ' {width: 200px; font-family: "Futura", sans-serif; color: #070707; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px;}';
 
 var cssNotDays = ' {visibility: hidden; width: 200px; font-family: "Futura", sans-serif; color: white !important; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px;}';
+
+var cssBubble = ' {display: none; width: 10px; height: 10px; border-radius: 50%; color: red; background-color: red;}';
 
 var cssLink = ' {text-decoration: none; color: inherit;}';
 
@@ -251,7 +261,7 @@ for (var i = 28 + initial; i < 35 + initial; i++) {
   	divId_5 = "day" + (i - 2);
   }
   
-  daysElements_5 += '<div id=' + divId_5 + '><a class="clickme" href="#">' + i + '</a></div>';
+  daysElements_5 += '<div id=' + divId_5 + '><a class="clickme" href="#">' + i + '</a><span class="bubble">1</span></div>';
 
   // today?
   if (i == date) {
@@ -263,6 +273,7 @@ for (var i = 28 + initial; i < 35 + initial; i++) {
   $('<style>' + '#' + divId_5 + cssDays + '</style>').appendTo(document.head);
   }
   
+  $('<style>' + '.bubble_' + (i - 2) + cssBubble + '</style>').appendTo(document.head);
 }
 
 var container = document.getElementById("days_row5");
@@ -372,10 +383,7 @@ const eventDot = "width: 10px; heigth: 10px; border-radius: 100%; background: re
 
             $('#popup').show();
         });
-        $('.close').click(function() {
-            $('#popup').hide();
-        }); 
-	$('.overlay').click(function() {
+        $('.overlay').click(function() {
             $('#popup').hide();
         }); 
  });
@@ -404,7 +412,13 @@ $("a").click(function(){
 
 })
 
-
+function addEvent(dayNum) {
+	for (var i=1; i < 32; i++) {
+  	if (i == dayNum) {
+    	 $('<style>' + '#day' + (i - 2) + cssEventDay + '</style>').appendTo(document.head);
+    }
+  }
+}
 
 /*
 function addEvent(dayNum, event) {

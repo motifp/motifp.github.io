@@ -375,6 +375,9 @@ const eventDot = "width: 10px; heigth: 10px; border-radius: 100%; background: re
         $('.close').click(function() {
             $('#popup').hide();
         }); 
+	$('.overlay').click(function() {
+            $('#popup').hide();
+        }); 
  });
  
 /* 

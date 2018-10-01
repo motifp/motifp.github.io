@@ -133,11 +133,16 @@ for (var i = 0 + initial; i < 7 + initial; i++) {
   
   daysElements_1 += '<div id=' + divId_1 + '><a class="clickme" href="#">' + i + '</a></div>';
 
+  // today?
+  if (i == date) {
+    $('<style>' + '#' + divId_1 + cssToday + '</style>').appendTo(document.head);
+  } else {
   // generate css styles
   if (i < 1) {
   $('<style>' + '#' + divId_1 + cssNotDays + '</style>').appendTo(document.head);
   } else {
   $('<style>' + '#' + divId_1 + cssDays + '</style>').appendTo(document.head);
+  }
   }
 }
 

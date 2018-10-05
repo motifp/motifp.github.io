@@ -6,6 +6,20 @@
   box-sizing: border-box;
 } */
 
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
 
 
 .bubble {
@@ -49,6 +63,7 @@
   letter-spacing: 1px;
 }
 
+/*
 .close {
   font-family: "Futura", sans-serif;
   z-index: 200;
@@ -67,6 +82,8 @@
   color: black;
 }
 
+*/
+
 .overlay h1 {
   font-size: 20px;
   font-family: "Futura", sans-serif;
@@ -74,6 +91,21 @@
   padding: 1em;
   letter-spacing: 2px;
 }
+
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+
+background-color: rgba(0,0,0,0.02); /* Black w/ opacity */
+}
+
 /*
 #popup {
   display: none;

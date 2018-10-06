@@ -119,7 +119,7 @@ var dayClicked = ' {border-style: outset; border: none; outline: 0;}';
 var cssPopup = ' {text-align: justify; -webkit-column-count: 3; /* Chrome, Safari, Opera */ -moz-column-count: 3; /* Firefox */ column-count: 1;}';
 
 
-const modalHTML1 = '<div id="popup-"';
+const modalHTML1 = '<div id=popup-';
 const modalHTML2 = ' class="modal"><div class="event-content-"';
 const modalHTML3 = ' style="background-color:#333333; margin: auto; padding: 40px; border: none; width: 80%;"><span class="close" onclick=closePopup()>&times;</span><style> p {font-family: "Futura", sans-serif; font-size: 16px; color: #f2f2f2; width: 80%;}</style><p>';
 const modalHTML4 = '</p></div></div>';
@@ -397,7 +397,7 @@ container.innerHTML = daysElements_5;
   	divId_5_k = "day" + (i_k - 2);
   }
   
- 		 	daysElements_5_k += '<button id=click-' + divId_5_k + ' onclick=popupFunction()>' + i + '</button>';
+ 		 	daysElements_5_k += '<button id=click-' + divId_5_k + ' onclick=popupFunction()>' + i_k + '</button>';
   
    $(modalHTML1 + divId_5_k + modalHTML2 + divId_5_k + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
@@ -502,7 +502,7 @@ container.innerHTML = daysElements_6;
   	divId_6_k = "day" + (i_k - 2);
   }
   
- 		 	daysElements_6_k += '<button id=click-' + divId_6_k + ' onclick=popupFunction()>' + i + '</button>';
+ 		 	daysElements_6_k += '<button id=click-' + divId_6_k + ' onclick=popupFunction()>' + i_k + '</button>';
   
    $(modalHTML1 + divId_6_k + modalHTML2 + divId_6_k + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
@@ -576,7 +576,7 @@ function addEvent(dayNum, event) {
   	if (i == dayNum) {
     	 $('<style>' + '#click-day' + (i - 2) + cssEventDay + '</style>').appendTo(document.head);
        
-       $(".event-content-day" + i + " p").replaceWith(event);
+       $(".event-content-day " + i + " p").replaceWith(event);
     }
   }
 }

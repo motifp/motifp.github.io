@@ -121,7 +121,7 @@ var cssPopup = ' {text-align: justify; -webkit-column-count: 3; /* Chrome, Safar
 
 const modalHTML1 = '<div id=popup-';
 const modalHTML2 = ' class="modal"><div class=event-content-';
-const modalHTML3 = ' style="background-color:#333333; margin: auto; padding: 40px; border: none; width: 80%;"><span class="close" onclick=closePopup()>&times;</span><style> p {font-family: "Futura", sans-serif; font-size: 16px; color: #f2f2f2; width: 80%;}</style><p>';
+const modalHTML3 = ' style="background-color:#333333; margin: auto; padding: 40px; border: none; width: 40%;"><span class="close" onclick=closePopup()>&times;</span><style> p {font-family: "Futura", sans-serif; font-size: 16px; color: #f2f2f2; width: 80%;}</style><p>';
 const modalHTML4 = '</p></div></div>';
 
 const noEvent = 'No event scheduled, check back later... ';

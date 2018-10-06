@@ -581,7 +581,7 @@ function addEvent(dayNum, event) {
   	if (i == dayNum) {
     	 $('<style>' + '#click-day' + (i - 2) + cssEventDay + '</style>').appendTo(document.head);
        
-       $(".event-content-day" + i + " p").replaceWith(event);
+       $(".event-content-day" + i + " p").replaceWith('<p>' + event + '</p>');
     
     }
   }

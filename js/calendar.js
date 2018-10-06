@@ -145,7 +145,7 @@ for (var i = 0 + initial; i < 7 + initial; i++) {
   	divId_1 = "day" + (i - 2);
   }
   
-  daysElements_1 += '<button id=click-' + divId_1 + ' onclick=popupFunction()>' + i + '</button>';
+  daysElements_1 += '<button id=click-' + divId_1 + ' onclick=popupFunction(' + i + ')>' + i + '</button>';
   
    $(modalHTML1 + divId_1 + modalHTML2 + divId_1 + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
@@ -201,7 +201,7 @@ for (var i = 7 + initial; i < 14 + initial; i++) {
   	divId_2 = "day" + (i - 2);
   }
   
-  daysElements_2 += '<button id=click-' + divId_2 + ' onclick=popupFunction()>' + i + '</button>';
+  daysElements_2 += '<button id=click-' + divId_2 + ' onclick=popupFunction(' + i + ')>' + i + '</button>';
   
    $(modalHTML1 + divId_2 + modalHTML2 + divId_2 + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
@@ -242,7 +242,7 @@ for (var i = 14 + initial; i < 21 + initial; i++) {
   	divId_3 = "day" + (i - 2);
   }
   
-  daysElements_3 += '<button id=click-' + divId_3 + ' onclick=popupFunction()>' + i + '</button>';
+  daysElements_3 += '<button id=click-' + divId_3 + ' onclick=popupFunction(' + i + ')>' + i + '</button>';
   
    $(modalHTML1 + divId_3 + modalHTML2 + divId_3 + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
@@ -283,7 +283,7 @@ for (var i = 21 + initial; i < 28 + initial; i++) {
   	divId_4 = "day" + (i - 2);
   }
   
-daysElements_4 += '<button id=click-' + divId_4 + ' onclick=popupFunction()>' + i + '</button>';
+daysElements_4 += '<button id=click-' + divId_4 + ' onclick=popupFunction(' + i + ')>' + i + '</button>';
   
    $(modalHTML1 + divId_4 + modalHTML2 + divId_4 + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
   
@@ -331,7 +331,7 @@ for (var i = 28 + initial; i < 35 + initial; i++) {
   	divId_5 = "day" + (i - 2);
   }
   
-  daysElements_5 += '<button id=click-' + divId_5 + ' onclick=popupFunction()>' + i + '</button>';
+  daysElements_5 += '<button id=click-' + divId_5 + ' onclick=popupFunction(' + i + ')>' + i + '</button>';
   
    $(modalHTML1 + divId_5 + modalHTML2 + divId_5 + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
@@ -397,7 +397,7 @@ container.innerHTML = daysElements_5;
   	divId_5_k = "day" + (i_k - 2);
   }
   
- 		 	daysElements_5_k += '<button id=click-' + divId_5_k + ' onclick=popupFunction()>' + i_k + '</button>';
+ 		 	daysElements_5_k += '<button id=click-' + divId_5_k + ' onclick=popupFunction(' + i_k + ')>' + i_k + '</button>';
   
    $(modalHTML1 + divId_5_k + modalHTML2 + divId_5_k + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
@@ -438,7 +438,7 @@ if (month === "January" || "March" || "May" || "July" || "August" || "October" |
   	divId_6 = "day" + (i - 2);
   }
   
- 		daysElements_6 += '<button id=click-' + divId_6 + ' onclick=popupFunction()>' + i + '</button>';
+ 		daysElements_6 += '<button id=click-' + divId_6 + ' onclick=popupFunction(' + i + ')>' + i + '</button>';
   
    $(modalHTML1 + divId_6 + modalHTML2 + divId_6 + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
@@ -502,7 +502,7 @@ container.innerHTML = daysElements_6;
   	divId_6_k = "day" + (i_k - 2);
   }
   
- 		 	daysElements_6_k += '<button id=click-' + divId_6_k + ' onclick=popupFunction()>' + i_k + '</button>';
+ 		 	daysElements_6_k += '<button id=click-' + divId_6_k + ' onclick=popupFunction(' + i_k + ')>' + i_k + '</button>';
   
    $(modalHTML1 + divId_6_k + modalHTML2 + divId_6_k + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
@@ -545,13 +545,18 @@ $(document).ready(function() {
 */
 
 
-function popupFunction() {
+function popupFunction(n) {
+
+  
  
-    $(".modal").show();
+    $("#popup-day" + n).show();
+
   
 }
 
-function closePopup() {
+function closePopup(n) {
+
+    $('<style>' + '#popup-day' + n + 'z-index: 0;' + '</style>').appendTo(document.head);
 
      $(".modal").hide();
 
@@ -576,7 +581,8 @@ function addEvent(dayNum, event) {
   	if (i == dayNum) {
     	 $('<style>' + '#click-day' + (i - 2) + cssEventDay + '</style>').appendTo(document.head);
        
-       $(".event-content-day " + i + " p").replaceWith(event);
+       $(".event-content-day" + i + " p").replaceWith(event);
+    
     }
   }
 }

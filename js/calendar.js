@@ -56,7 +56,7 @@ var initial = 0;
 
 if (date < 8) {
   if (days.indexOf(day) == 0) {
-      initial = 1;
+      initial = 0;
   } else {
 	if (days.indexOf(day) === date) {
   	initial = 0;

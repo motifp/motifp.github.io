@@ -55,10 +55,14 @@ window.onload = function getCalendarDay() {
 var initial = 0;
 
 if (date < 8) {
+  if (days.indexOf(day) == 0) {
+      initial = 1;
+  } else {
 	if (days.indexOf(day) === date) {
   	initial = 0;
   } else {
   	initial = 1 - days.indexOf(day);
+  }
   }
 } else if (date > 7 && date < 15) {
     if (days.indexOf(day) === date - 7) {
@@ -337,7 +341,7 @@ for (var i = 28 + initial; i < 35 + initial; i++) {
 
 
   // generate css styles
-  		if (i < 31) {
+  		if (i < 32) {
         // today?
         if (i == date) {
           $('<style>' + '#click-' + divId_5 + cssToday + '</style>').appendTo(document.head);
@@ -443,7 +447,7 @@ if (month === "January" || "March" || "May" || "July" || "August" || "October" |
    $(modalHTML1 + divId_6 + modalHTML2 + divId_6 + modalHTML3 + noEvent + modalHTML4).appendTo(document.body);
 
   // generate css styles
-  		if (i < 31) {
+  		if (i < 32) {
         // today?
         if (i == date) {
           $('<style>' + '#click-' + divId_6 + cssToday + '</style>').appendTo(document.head);

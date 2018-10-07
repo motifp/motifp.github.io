@@ -281,6 +281,17 @@ h1 {
   margin-top: 10%;
 }
 
+.right p6 {
+ font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.7px;
+  line-height: 2.3em;
+  font-weight: 100;
+  margin-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 30%;
+}
+
 .quote2 {
   display: inline-block;
   background-color: #232323;

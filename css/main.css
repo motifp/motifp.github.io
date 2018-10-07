@@ -177,7 +177,7 @@ h1 {
   flex: 1 0 auto;
   position: relative;
   height: 100vh;
-  transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4.1);
   z-index: -1;
 }
 

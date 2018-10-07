@@ -279,6 +279,7 @@ h1 {
   font-weight: 100;
   margin-right: 20%;
   margin-top: 10%;
+  display: inline-block;
 }
 
 .right p6 {
@@ -290,6 +291,7 @@ h1 {
   margin-right: 20%;
   margin-top: 10%;
   margin-bottom: 30%;
+  display: inline-block;
 }
 
 .quote2 {

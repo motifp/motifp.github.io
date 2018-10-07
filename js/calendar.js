@@ -100,9 +100,9 @@ $(document).ready (function () {
 })
 */
 
-var cssDays = ' {width: 200px; font-family: "Futura", sans-serif; font-size: 16px; color: #9e9e9e; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px; border: 0; cursor: pointer;}';
+var cssDays = ' {width: 200px; font-family: "Futura", sans-serif; font-size: 16px; color: #9e9e9e; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px; border: 0; cursor: pointer; background-color: #f2f2f2;}';
 
-var cssToday = ' {width: 200px; font-family: "Futura", sans-serif; font-size: 16px; color: #070707; font-weight: 400; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px; border: 0; cursor: pointer;}';
+var cssToday = ' {width: 200px; font-family: "Futura", sans-serif; font-size: 16px; color: #070707; font-weight: 400; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px; border: 0; cursor: pointer; background-color: #f2f2f2;}';
 
 var cssEventDay = ' {width: 200px; font-family: "Futura", sans-serif; color: #070707; text-align: center; flex-grow: 1; flex-basis: 0; padding: 8px 10px;}';
 

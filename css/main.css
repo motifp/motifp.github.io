@@ -167,8 +167,8 @@ h1 {
   overflow-y: scroll;
 }
 
-.main-container ::-webkit-scrollbar {
-   display: none;
+.main-container::-webkit-scrollbar {
+    display: none;
 }
 
 .content-container {

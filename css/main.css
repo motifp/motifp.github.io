@@ -167,6 +167,10 @@ h1 {
   overflow-y: scroll;
 }
 
+.main-container ::-webkit-scrollbar {
+   display: none;
+}
+
 .content-container {
   z-index: 1;
   transform: translateZ(999px) sclae(.7);

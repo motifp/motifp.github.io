@@ -218,7 +218,9 @@ h1 {
   margin-left: 20%;
   margin-right: 10%;
   width: 100%;
-  margin-bottom: 30%;
+  margin-bottom: 15%;
+  margin-top: 20%;
+  display: inline-block;
 }
 
 .left h {

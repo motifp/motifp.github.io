@@ -427,9 +427,30 @@ h1 {
   white-space: pre; /* pre-wrap */
 }
 
-.blog-1 p {
-  font-size: 16px;
+.blog-1-h {
+  font-size: 22px;
+  font-family: "Futura";
+  background-color: #f2f2f2;
+  display: inline-block;
+  color: #9e9e9e;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 25%;
+  white-space: pre; /* pre-wrap */
 }
+
+.blog-1-p {
+  font-size: 16px;
+  font-family: "Futura";
+  background-color: #f2f2f2;
+  display: inline-block;
+  color: #9e9e9e;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 25%;
+  white-space: pre; /* pre-wrap *
+}
+   
 /*
 ==========================================================================
    Helper classes

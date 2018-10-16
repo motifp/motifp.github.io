@@ -13,7 +13,8 @@ $(document).ready(function() {
   $.get('blog-1.txt', function(text) {
     var lines = text.split("\n");
     $('.blog-1-h').html(lines[0]);
-    $('.blog-1-p').html(lines[1], lines[2]);
+    $('.blog-1-p').html(lines[1]);
+    $('.blog-1-p').html(lines[2]);
   })
 })
 

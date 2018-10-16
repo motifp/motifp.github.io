@@ -22,7 +22,7 @@ $.ajax ({
   url: 'blog-1.txt',
   dataType: 'text',
   success: function(data) {
-  $('.blog-content').append(data);
+  $('.blog-content').append("<pre />" + data);
    
   } 
 })

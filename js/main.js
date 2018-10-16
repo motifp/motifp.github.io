@@ -1,7 +1,19 @@
+/*
 $.ajax ({
   url: 'blog-1.txt',
   dataType: 'text',
   success: function(data) {
     $('.blog-1').html(data);
+    var lines = 
   } 
 })
+*/
+
+$(document).ready(function() {
+  $.get('blog-1.txt', function(text) {
+    var lines = text.split("\n");
+    $('.blog-1-h').html(lines[0]);
+    $('.blog-1-p').html(lines[1], lines[2]);
+  })
+})
+

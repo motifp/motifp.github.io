@@ -1,12 +1,7 @@
-$('#container').calendar({
-data: [
-{
-date: '2018/9/23',
-value: 'Workshop'
-},
-{
-date: '2018/10/07',
-value: 'Workshop'
-}
-]
-});
+$.ajax ({
+  url: 'blog-1.txt',
+  dataType: 'text',
+  success: function(data) {
+    $('.blog-1').html(data);
+  } 
+})

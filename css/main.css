@@ -427,7 +427,7 @@ h1 {
   white-space: pre; /* pre-wrap */
 }
 
-.blog-1-h-p {
+#blog-1-h-p {
   font-size: 22px;
   font-family: "Futura";
   background-color: #f2f2f2;

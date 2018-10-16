@@ -474,6 +474,28 @@ h1 {
   margin-bottom: 25%;
   white-space: pre-line;
 }
+
+.blog-content h {
+  font-size: 22px;
+  font-family: "Futura";
+  background-color: #f2f2f2;
+  display: inline-block;
+  color: #474747;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.blog-content p {
+  font-size: 16px;
+  font-family: "Futura";
+  background-color: #f2f2f2;
+  display: inline-block;
+  color: #9e9e9e;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 25%;
+}
    
 /*
 ==========================================================================

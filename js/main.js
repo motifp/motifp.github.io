@@ -13,8 +13,8 @@ $(document).ready(function() {
   $.get('blog-1.txt', function(text) {
     var lines = text.split("\n");
     $('#blog-1-h-p').html(lines[0]);
-    var pageTitle = $('title');
-    if (pageTitle == "") {
+    var titleExistence = $('title').length;
+    if (titleExistence === false) {
       $('title').append(lines[0]);
         }
     $('.blog-content').prepend('<h>' + lines[0] + '</h>');

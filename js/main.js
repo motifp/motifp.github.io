@@ -14,7 +14,7 @@ $(document).ready(function() {
     var lines = text.split("\n");
     $('#blog-1-h-p').html(lines[0]);
     var titleExistence = $('title').length;
-    if (titleExistence === false) {
+    if (!titleExistence) {
       $('title').append(lines[0]);
         }
     $('.blog-content').prepend('<h>' + lines[0] + '</h>');

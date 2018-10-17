@@ -15,9 +15,9 @@ $(document).ready(function() {
     $('#blog-1-h-p').html(lines[0]);
     var pageTitle = $('title');
     if (pageTitle == "") {
-      $('.blog-content').prepend('<h>' + lines[0] + '</h>');
+      $('title').append(lines[0]);
         }
-    $('title').append(lines[0]);
+    $('.blog-content').prepend('<h>' + lines[0] + '</h>');
     $('.blog-1-p1-p').html(lines[1]);
     $('.blog-1-p2-p').html(lines[2]);
   })

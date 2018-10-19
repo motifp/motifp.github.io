@@ -214,7 +214,7 @@ h1 {
 .quote p {
   font-family: "Futura", sans-serif;
   font-size: 50px;
-  letter-spacing: 1.7px;
+  letter-spacing: 1.6px;
   line-height: 2;
   color: #f2f2f2;
   position: relative;
@@ -305,7 +305,7 @@ h1 {
 .right p {
   font-family: "Didact Gothic", sans-serif;
   font-size: 16px;
-  letter-spacing: 1.7px;
+  letter-spacing: 1.6px;
   line-height: 2.3em;
   font-weight: 100;
   margin-right: 20%;
@@ -315,7 +315,7 @@ h1 {
 .right p5 {
  font-family: "Didact Gothic", sans-serif;
   font-size: 16px;
-  letter-spacing: 1.7px;
+  letter-spacing: 1.6px;
   line-height: 2.3em;
   font-weight: 100;
   margin-right: 20%;
@@ -326,7 +326,7 @@ h1 {
 .right p6 {
  font-family: "Didact Gothic", sans-serif;
   font-size: 16px;
-  letter-spacing: 1.7px;
+  letter-spacing: 1.6px;
   line-height: 2.3em;
   font-weight: 100;
   margin-right: 20%;
@@ -338,7 +338,7 @@ h1 {
 .right p7 {
  font-family: "Didact Gothic", sans-serif;
   font-size: 16px;
-  letter-spacing: 1.7px;
+  letter-spacing: 1.6px;
   line-height: 2.3em;
   font-weight: 100;
   margin-right: 20%;
@@ -507,6 +507,8 @@ h1 {
 .blog-content p {
   font-size: 16px;
   font-family: "Didact Gothic", sans-serif;
+  letter-spacing: 1.6px;
+  line-height: 2em;
   background-color: #f2f2f2;
   display: inline-block;
   color: #9e9e9e;

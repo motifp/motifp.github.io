@@ -38,7 +38,7 @@ $(document).ready(function() {
     lines.splice(0,3);
     var lines2 = lines.join("");
     
-    $('blog-1-p1-p').append(lines2);
+    $('.blog-1-p1-p').append(lines2);
   })
 })
 

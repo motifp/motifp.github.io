@@ -486,21 +486,21 @@ h1 {
   color: #9e9e9e;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 25%;
+  margin-bottom: 80px;
   white-space: pre-line;
 }
 
 .blog-content h {
-  font-size: 35px;
+  font-size: 40px;
   font-family: "Futura";
   background-color: #f2f2f2;
   display: inline-block;
   color: #474747;
-  margin-left: 10%;
+  padding-left: 48px;
   margin-right: 10%;
  /* margin-bottom: 20%; */
-  margin-top: 25%;  
-  width: 100%;
+  padding-top: 130px;  
+  width: 90%;
 }
 
 .blog-content p {
@@ -509,17 +509,17 @@ h1 {
   background-color: #f2f2f2;
   display: inline-block;
   color: #9e9e9e;
-  margin-left: 10%;
-  margin-right: 20%;
+  padding-left: 48px;
+  margin-right: 10%;
  /* margin-bottom: 25%; */
-  width: 80%;
+  width: 90%;
 }
 
 .blog-flex {
   display: flex;
   flex: 1 1 auto;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .flex-date {
@@ -528,8 +528,7 @@ h1 {
   background-color: #f2f2f2;
   display: inline-block;
   color: #9e9e9e;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 48px;
   width: 100%;
 }
 
@@ -539,8 +538,7 @@ h1 {
   background-color: #f2f2f2;
   display: inline-block;
   color: #9e9e9e;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 48px;
   width: 100%;
 }
    

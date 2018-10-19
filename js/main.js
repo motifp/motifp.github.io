@@ -34,8 +34,11 @@ $.ajax ({
       nLines++;
         }
   }
+  
+  $('.blog-flex').append('<div class=flex-date>' + lines[1] + '</div>');
+  $('.blog-flex').append('<div class="flex-author">' + lines[2] + '</div>');
     
-  for (var j = 1; j <= nLines; j++) {
+  for (var j = 3; j <= nLines; j++) {
      $('.blog-content').append('<p>' + lines[j] + '</p>');
   }
  

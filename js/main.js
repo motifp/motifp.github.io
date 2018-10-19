@@ -53,7 +53,7 @@ $(document).ready(function() {
           }
     }
     
-    $('.blog-1-p1-p').append(preview + " ... <br>");
+    $('.blog-1-p1-p').append(preview + " ... <a href='blog-1.html'>FULL ARTICLE</a><br>");
     
     var newLines = text.split("\n");
     $('.blog-1-date-p').append(newLines[1]);

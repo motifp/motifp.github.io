@@ -54,6 +54,9 @@ $(document).ready(function() {
     }
     
     $('.blog-1-p1-p').append(preview + " ... ");
+    
+    $('.blog-1-p1-p').append(lines[1]);
+
   })
 })
 

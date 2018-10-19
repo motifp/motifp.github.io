@@ -494,8 +494,8 @@ h1 {
   color: #474747;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 20%;
-/*  margin-top: 25%;  */
+ /* margin-bottom: 20%; */
+  margin-top: 25%;  
   width: 100%;
 }
 

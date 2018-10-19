@@ -47,9 +47,7 @@ $(document).ready(function() {
           nSentence++;
           }
       if (nSentence < 3) {
-          for (var k = 0; k <= j; k++) {
             preview += lines2[j];
-          } 
           } else {
               break
           }

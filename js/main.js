@@ -38,7 +38,24 @@ $(document).ready(function() {
     lines.splice(0,3);
     var lines2 = lines.join("");
     
-    $('.blog-1-p1-p').append(lines2);
+    nSentence = 0;
+    
+    preview = "";
+    
+    for (var j = 0, n = lines2.length; j < n; j++) {
+      if (lines2[j] == ".") {
+          nSentence++;
+          }
+      if (nSentence < 3) {
+          for (var k = 0; k <= j; k++) {
+            preview += lines2[j];
+          } else {
+              break
+          }
+          }
+    }
+    
+    $('.blog-1-p1-p').append(preview);
   })
 })
 

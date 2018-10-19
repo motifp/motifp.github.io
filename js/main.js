@@ -33,11 +33,12 @@ $(document).ready(function() {
     if ($('title').is(':empty')) {
       $('title').append(lines[0]);
         }
+    $('.blog-content').prepend('<h>' + lines[0] + '</h>');
     
     lines.splice(0,3);
     var lines2 = lines.join("");
     
-    $('blog-1-p1-p').append(lines[0]);
+    $('blog-1-p1-p').append(lines2);
   })
 })
 

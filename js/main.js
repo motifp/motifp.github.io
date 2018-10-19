@@ -9,6 +9,7 @@ $.ajax ({
 })
 */
 
+/*
 $(document).ready(function() {
   $.get('blog-1.txt', function(text) {
     var lines = text.split("\n");
@@ -22,6 +23,24 @@ $(document).ready(function() {
     $('.blog-1-p2-p').html(lines[4]);
   })
 })
+*/
+
+$(document).ready(function() {
+  $.get('blog-1.txt', function(text) {
+    var lines = text.split("\n");
+    $('#blog-1-h-p').html(lines[0]);
+   // var titleExistence = $('title').children().length;
+    if ($('title').is(':empty')) {
+      $('title').append(lines[0]);
+        }
+    
+    lines.splice(0,3);
+    var lines2 = lines.join("");
+    
+    $('blog-1-p1-p').append(lines[0]);
+  })
+})
+
 
 $.ajax ({
   url: 'blog-1.txt',
@@ -45,3 +64,4 @@ $.ajax ({
    
   } 
 })
+

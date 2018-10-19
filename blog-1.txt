@@ -1,4 +1,6 @@
 Hello world! - We are testing some stuff... 
+Oct 18 2018
+Teri Ke
 This is supposed to be line 1
 This is line 2
 Still testing...

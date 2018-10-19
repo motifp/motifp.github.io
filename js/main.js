@@ -35,7 +35,7 @@ $.ajax ({
         }
   }
     
-  for (var j = 0; j <= nLines; j++) {
+  for (var j = 1; j <= nLines; j++) {
      $('.blog-content').append('<p>' + lines[j] + '</p>');
   }
  

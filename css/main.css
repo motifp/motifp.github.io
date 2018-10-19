@@ -487,7 +487,7 @@ h1 {
   background-color: #f2f2f2;
   display: inline-block;
   color: #9e9e9e;
-  margin-left: 10%;
+  padding-left: 10%;
   margin-right: 10%;
   margin-bottom: 80px;
   white-space: pre-line;
@@ -501,7 +501,7 @@ h1 {
   color: #474747;
   padding-left: 48px;
   margin-right: 10%;
- /* margin-bottom: 20%; */
+  padding-bottom: 40px;
   padding-top: 130px;  
   width: 90%;
 }
@@ -523,8 +523,8 @@ h1 {
 .blog-flex {
   display: flex;
   flex: 1 1 auto;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  padding-top: 16px;
+ /* margin-bottom: 8px; */
 }
 
 .flex-date {

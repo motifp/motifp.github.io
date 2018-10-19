@@ -367,6 +367,7 @@ h1 {
   background-color: #232323;
   width: 100%;
   height: auto;
+  text-align: center;
 }
 
 .footer p_i {
@@ -388,7 +389,10 @@ h1 {
   color: #9e9e9e;
   letter-spacing: 2.3px;
   text-align: center;
-  margin-top: 70px;
+  padding-top: 48px;
+  padding-bottom: 16px;
+  width: 50%;
+  margin 0 auto;
 }
 
 .footer p2 {
@@ -398,9 +402,7 @@ h1 {
   letter-spacing: 2.3px;
   text-align: center;
   display: inline-block;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 70px;
+  padding-bottom: 114px;
 }
 
 .bottomnav {

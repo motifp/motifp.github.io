@@ -30,13 +30,15 @@ $.ajax ({
   var lines = data.split("\n");
   var nLines = 0;
   for (var i = 0, n=data.length; i < n; i++ ) {
-    if (data[i] === '\r\n') {
+    if (data[i] === '\n') {
       nLines++;
         }
+  }
+    
   for (var j = 0; j <= nLines; j++) {
      $('.blog-content').append('<p>' + lines[j] + '</p>');
   }
-  }
+ 
    
   } 
 })
